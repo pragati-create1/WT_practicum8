@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Urban Bloom - Responsive Gallery</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f0f5e9;
+            text-align: center;
+        }
+
+        h1 {
+            color: darkgreen;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Desktop View */
+        @media (min-width: 769px) {
+            .gallery img {
+                height: 220px;
+            }
+        }
+
+        /* Tablet View */
+        @media (min-width: 481px) and (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .gallery img {
+                height: 180px;
+            }
+        }
+
+        /* Mobile View */
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery img {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>URBAN BLOOM</h1>
+    <h3>Smart Gardening and Farming Tools</h3>
+
+    <p>
+        Welcome to Urban Bloom! Explore modern gardening tools
+        and discover simple ways to grow healthy plants.
+    </p>
+
+    <h2>Our Garden Gallery</h2>
+
+    <div class="gallery">
+        <img src="Urban_Bloom7.jpg" alt="Green plants">
+
+        <img src="Urban_Bloom3.jpg" alt="Garden plants">
+
+        <img src="Urban_Bloom8.jpg" alt="Indoor plants">
+    </div>
+
+    <p>© Rights reserved by URBAN BLOOM</p>
+
+</body>
+</html>
